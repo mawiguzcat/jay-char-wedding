@@ -1,25 +1,19 @@
-# Jay & Char: Wedding Website
+# Jay & Char: Wedding Invitation
 
-Wedding invitation site for **Jay & Char**, January 22, 2028, Manila Cathedral, Intramuros, with the reception at La Castellana, Intramuros.
+Live site: https://mawiguzcat.github.io/jay-char-wedding/
 
-Built on the open-source [wedding-website](https://github.com/rampatra/wedding-website) template by Ram Patra (GPL-3.0).
+Built from the MIT-licensed [dewanakl/undangan](https://github.com/dewanakl/undangan) template, translated to English and adapted.
+
+- Saturday, January 22, 2028, 2:00 PM (Philippine Time)
+- Ceremony: Manila Cathedral, Intramuros. Reception: La Castellana, Intramuros
+- RSVP deadline: December 15, 2027
 
 ## Edit the content
-- Text, schedule, venues, dress code: `index.html`
-- Photos: `img/photos/` (also `img/og-image.jpg`, the link-preview image)
-- Look and feel: `sass/partials/_colors.scss` and `sass/partials/_elegant.scss`
-- RSVP settings, invite code, calendar details: top of the RSVP section in `js/scripts.js`
+Everything is in `index.html`. Photos are in `assets/images/`. The countdown uses `data-time` on `<body>`; the Google Calendar button is in `js/app/guest/guest.js`.
+Personalised links: `https://mawiguzcat.github.io/jay-char-wedding/?to=Guest%20Name`
 
-After editing styles or scripts, rebuild:
+## RSVP to Google Sheet
+Follow `apps-script/README.md`, then paste the web app URL into `RSVP_ENDPOINT` at the bottom of `index.html`.
 
-    npm install
-    npx gulp
-
-## RSVP form
-RSVPs are saved to a Google Sheet. Setup steps are in [`apps-script/README.md`](apps-script/README.md).
-The default invite code is `012228` (see `INVITE_CODE_HASHES` in `js/scripts.js`).
-
-## Hosting (GitHub Pages)
-Push to GitHub, then **Settings > Pages > Deploy from a branch > main / root**.
-To use a custom domain later, add a `CNAME` file containing just the domain name.
-Also update `og:image` in `index.html` to the full public URL of `img/og-image.jpg`.
+## Rebuild after changing JS
+`npm install && npm run build` (output in `dist/`, which is committed so GitHub Pages can serve it). Changes to `index.html` or images need no build.

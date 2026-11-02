@@ -1,409 +1,649 @@
 <!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en" data-bs-theme="auto">
+
 <head>
+    <!-- Common Tag -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Jay &amp; Char are getting married!</title>
-    <meta name="description" content="Jay & Char invite you to celebrate their wedding on January 22, 2028 at Manila Cathedral, Intramuros.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#2b1519">
-    <meta property="og:title" content="Jay & Char are getting married">
+    <title>Jay &amp; Char | Wedding Invitation</title>
+
+    <!-- SEO Tag -->
+    <meta name="author" content="Jay &amp; Char">
+    <meta name="language" content="en">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="title" content="Jay &amp; Char | Wedding Invitation">
+    <meta name="description" content="Jay &amp; Char invite you to celebrate their wedding on January 22, 2028 at Manila Cathedral, Intramuros, Manila.">
+    <meta property="og:title" content="Jay &amp; Char | Wedding Invitation">
     <meta property="og:description" content="Join us on January 22, 2028 at Manila Cathedral, Intramuros, Manila.">
-    <!-- TODO: once the site has a public address, change this to the full URL, e.g. https://yourdomain.com/img/og-image.jpg -->
-    <meta property="og:image" content="img/og-image.jpg">
+    <meta property="og:image" content="https://mawiguzcat.github.io/jay-char-wedding/assets/images/og.jpg">
+    <meta property="og:image:secure_url" content="https://mawiguzcat.github.io/jay-char-wedding/assets/images/og.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Jay and Char">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#2b1519">
+    <meta property="og:locale" content="en_PH">
+    <meta property="og:url" content="https://mawiguzcat.github.io/jay-char-wedding/">
+    <meta property="og:site_name" content="Jay &amp; Char">
 
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/queries.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!-- Appearance -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Jay &amp; Char">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark light">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="canonical" href="https://mawiguzcat.github.io/jay-char-wedding/">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="./assets/images/icon-192x192.png">
+
+    <!-- Preconnect CDN -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+    <!-- Preload Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha256-2FMn2Zx6PuH5tdBQDRNwrOo60ts5wWPC9R8jK67b3t4=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css" integrity="sha256-4rTIfo5GQTi/7UJqoyUJQKzxW8VN/YBH31+Cy+vTZj4=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha256-5P1JGBOIxI7FBAvT/mb1fCnI5n/NhQKzNUuW7Hq0fMc=" crossorigin="anonymous" as="script">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+
+    <!-- Dependencies CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha256-2FMn2Zx6PuH5tdBQDRNwrOo60ts5wWPC9R8jK67b3t4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css" integrity="sha256-4rTIfo5GQTi/7UJqoyUJQKzxW8VN/YBH31+Cy+vTZj4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/guest.css">
+
+    <!-- Dependencies JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha256-5P1JGBOIxI7FBAvT/mb1fCnI5n/NhQKzNUuW7Hq0fMc=" crossorigin="anonymous"></script>
+    <script src="./dist/guest.js"></script>
 </head>
-<body id="top">
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-<section class="hero">
-    <section class="navigation">
-        <header>
-            <div class="header-content">
-                <div class="logo"><a href="#top" class="logo-text">J <span>&amp;</span> C</a></div>
-                <div class="header-nav">
-                    <nav>
-                        <ul class="primary-nav">
-                            <li><a href="#intro">Our story</a></li>
-                            <li><a href="#events">The day</a></li>
-                            <li><a href="#map">Venue</a></li>
-                        </ul>
-                        <ul class="member-actions">
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="navicon">
-                    <a class="nav-toggle" href="#"><span></span></a>
-                </div>
-            </div>
-        </header>
-    </section>
-    <div class="container">
-        <div class="row hero-row">
-            <div class="col-md-7 hero-text text-center">
-                <p class="hero-kicker">Save the date</p>
-                <h1 class="hero-names">Jay <span class="amp">&amp;</span> Char</h1>
-                <p class="hero-sub">are getting married</p>
-                <div class="hero-divider"><span></span><i class="fa fa-diamond"></i><span></span></div>
-                <p class="hero-date">January 22, 2028</p>
-                <p class="hero-place">Manila Cathedral &middot; Intramuros, Manila</p>
-                <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a>
-            </div>
-            <div class="col-md-5 hero-photo-col text-center">
-                <div class="hero-arch">
-                    <img src="img/photos/couple-1.jpg" alt="Jay and Char showing off the engagement ring">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
-</section>
 
-<section id="invitation" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <h3>You are invited</h3>
-                <p class="invite-line">Together with their families, Jay and Char joyfully invite you to celebrate their
-                    wedding on <strong>Saturday, the twenty-second of January, 2028</strong>, at two o'clock in the
-                    afternoon.</p>
-                <p class="invite-line invite-sub">Manila Cathedral, Intramuros<br>followed by a reception at La
-                    Castellana, Intramuros</p>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Set the wedding date/time in data-time (Philippine Time). Remove data-audio to disable the song. -->
+<body data-audio="./assets/music/pure-love-304010.mp3" data-confetti="true" data-time="2028-01-22 14:00:00">
 
-<section id="intro">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Our story</h3>
-            </div>
-        </div>
-        <div class="row story-row">
-            <div class="col-md-4 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
-                <div class="story-photo wp1">
-                    <a class="fancybox" rel="group" href="img/photos/couple-2.jpg">
-                        <img src="img/photos/couple-2-sm.jpg" alt="Hand in hand, with the ring">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 story-text">
-                <!-- TODO: placeholder story. Replace with your own. -->
-                <p>Some love stories begin with fireworks. Ours began with a conversation that never really ended: long
-                    talks, shared laughs, and the quiet feeling that we had found our person.</p>
-                <p>Through busy seasons and small adventures, we learned that home isn't a place, it's each other. Then
-                    one evening came a small box, a trembling hand, and a very happy "yes."</p>
-                <p>Now we are ready for our next chapter, and we would love for you, the people who have loved and
-                    supported us, to be there as we say "I do" in the heart of Intramuros.</p>
-                <p class="signature">With love, Jay &amp; Char</p>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Root Invitation -->
+    <div class="row m-0 p-0 opacity-0" id="root">
 
-<section class="events section-padding" id="events">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">The day</h3>
-                <p class="text-center date-line">Saturday, January 22, 2028</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <h5>Wedding Ceremony <span class="time">2:00 PM</span></h5>
-                    <p>Join us at Manila Cathedral in Intramuros as we exchange our vows. Please be seated by 1:30 PM so
-                        we can begin right on time.</p>
-                </div>
-                <div class="wp5">
-                    <h5>Cocktails &amp; Photos <span class="time">4:00 PM</span></h5>
-                    <p>After the ceremony, enjoy light refreshments, take photos with the couple and the family, and make
-                        your way to the reception.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <h5>Reception &amp; Dinner <span class="time">5:00 PM</span></h5>
-                    <p>Dinner, toasts, and a few surprises at La Castellana, Intramuros. Come hungry and ready to
-                        celebrate.</p>
-                </div>
-                <div class="wp6">
-                    <h5>Dancing &amp; Celebration <span class="time">7:30 PM onwards</span></h5>
-                    <p>The party continues! Dance, laugh, and help us close the night in style.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <p class="tentative-note">Times are tentative. Final details will be shared closer to the date.</p>
-            </div>
-        </div>
-        <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-star-o"></i>&nbsp;&nbsp;Dress code
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">What to wear</h3>
-                    <h5>Ceremony <span class="time">2:00 PM</span></h5>
-                    <p>
-                        <strong>Formal and modest</strong>
-                        <br>
-                        We'll be in a cathedral, so please cover shoulders and avoid very short hemlines. Barong
-                        Tagalog and Filipiniana are most welcome.
-                    </p>
-                    <h5>Reception <span class="time">5:00 PM</span></h5>
-                    <p>
-                        <strong>Formal / cocktail attire</strong>
-                        <br>
-                        Dress up and dress comfortably, because there will be dancing.
-                    </p>
-                    <h5>Color palette</h5>
-                    <p>
-                        To be announced. We'll update this page soon.
-                    </p>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-</section>
-
-<section id="instagram" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <h3>Share the joy</h3>
-                <p>Help us capture the moment. Tag your photos with our wedding hashtag</p>
-                <p class="hashtag">#JayAndChar</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--
-  VENUE VIDEO (optional): to bring back the video banner, paste a YouTube link in videoURL below and
-  remove this comment wrapper.
-
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/YOUR_VIDEO_ID',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, opacity:1}">
-    </div>
-    <div id="video-content">
-        <h5>Intramuros</h5>
-        <p>The Walled City</p>
-    </div>
-</section>
--->
-
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>Both venues are in Intramuros, Manila, the historic Walled City.</p>
-    </div>
-    <div id="map-canvas">
-        <iframe id="map-frame"
-                title="Wedding venue map"
-                width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=Manila+Cathedral,+Intramuros,+Manila&amp;output=embed"></iframe>
-    </div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Ceremony &middot; 2:00 PM</h5>
-                            <p><strong>Manila Cathedral</strong><br>Cabildo St., Intramuros, Manila</p>
+        <!-- Desktop mode -->
+        <div class="sticky-top vh-100 d-none d-sm-block col-sm-5 col-md-6 col-lg-7 col-xl-8 col-xxl-9 overflow-y-hidden m-0 p-0">
+            <div class="position-relative bg-white-black d-flex justify-content-center align-items-center vh-100">
+                <div class="d-flex position-absolute w-100 h-100">
+                    <div class="position-relative overflow-hidden vw-100">
+                        <div class="position-absolute h-100 w-100 slide-desktop" style="opacity: 0;">
+                            <img src="./assets/images/placeholder.webp" data-src="./assets/images/couple-1.webp" alt="bg" class="bg-cover-home" style="mask-image: none; opacity: 30%;">
                         </div>
-                        <div class="col-md-6">
-                            <h5>Reception &middot; 5:00 PM</h5>
-                            <p><strong>La Castellana</strong><br>Intramuros, Manila</p>
+                        <div class="position-absolute h-100 w-100 slide-desktop" style="opacity: 0;">
+                            <img src="./assets/images/placeholder.webp" data-src="./assets/images/gallery-2.webp" alt="bg" class="bg-cover-home" style="mask-image: none; opacity: 30%;">
+                        </div>
+                        <div class="position-absolute h-100 w-100 slide-desktop" style="opacity: 0;">
+                            <img src="./assets/images/placeholder.webp" data-src="./assets/images/couple-2.webp" alt="bg" class="bg-cover-home" style="mask-image: none; opacity: 30%;">
                         </div>
                     </div>
-                    <div class="row text-center">
-                        <div class="col-md-4" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small map-switch" data-map-query="Manila Cathedral, Intramuros, Manila"><i
-                                    class="fa fa-map-marker"></i>&nbsp;&nbsp;Ceremony</a>
-                        </div>
-                        <div class="col-md-4" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small map-switch" data-map-query="La Castellana, Intramuros, Manila"><i
-                                    class="fa fa-map-marker"></i>&nbsp;&nbsp;Reception</a>
-                        </div>
-                        <div class="col-md-4" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map"></i>&nbsp;&nbsp;Show
-                                map</a>
-                        </div>
-                    </div>
-                    <p class="map-open-wrap"><a id="map-open" target="_blank" rel="noopener"
-                                                href="https://www.google.com/maps/search/?api=1&amp;query=Manila+Cathedral%2C+Intramuros%2C+Manila">Open
-                        in Google Maps</a></p>
+                </div>
+
+                <div class="text-center p-4 bg-overlay-auto rounded-5">
+                    <h2 class="font-esthetic mb-4" style="font-size: 2rem;">Jay &amp; Char</h2>
+                    <p class="m-0" style="font-size: 1rem;">Saturday, January 22, 2028</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<section class="rsvp text-center" id="rsvp">
+        <!-- Smartphone mode -->
+        <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4 col-xxl-3 m-0 p-0">
+            <!-- Main Content -->
+            <main data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-root-margin="25% 0% 0% 0%" data-bs-smooth-scroll="true" tabindex="0">
 
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3 id="rsvp-thanks-title">Thank you!</h3>
-                        <p id="rsvp-thanks-text">We are glad to see you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+                <!-- Home -->
+                <section id="home" class="bg-light-dark position-relative overflow-hidden p-0 m-0">
+                    <img src="./assets/images/placeholder.webp" data-src="./assets/images/couple-1.webp" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>Will you join us?</h3>
-                <p>Kindly RSVP on or before December 15, 2027.</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                    <div class="position-relative text-center bg-overlay-auto" style="background-color: unset;">
+                        <h1 class="font-esthetic pt-5 pb-4 fw-medium" style="font-size: 2.25rem;">Wedding Invitation</h1>
+
+                        <img src="./assets/images/placeholder.webp" data-src="./assets/images/couple-1.webp" alt="Jay and Char" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer" style="object-position: center 30%;">
+
+                        <h2 class="font-esthetic my-4" style="font-size: 2.25rem;">Jay &amp; Char</h2>
+                        <p class="my-2" style="font-size: 1.25rem;">Saturday, January 22, 2028</p>
+
+                        <button class="btn btn-outline-auto btn-sm shadow rounded-pill px-3 py-1" style="font-size: 0.825rem;">
+                            <i class="fa-solid fa-calendar-check me-2"></i>Save to Google Calendar
+                        </button>
+
+                        <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
+                            <div class="mouse-animation border border-secondary border-2 rounded-5 px-2 py-1 opacity-50">
+                                <div class="scroll-animation rounded-4 bg-secondary"></div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+
+                        <p class="pb-4 m-0 text-secondary" style="font-size: 0.825rem;">Scroll Down</p>
+                    </div>
+                </section>
+
+                <!-- Wave Separator -->
+                <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-svg no-gap-bottom">
+                        <path fill="currentColor" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
+                </div>
+
+                <!-- Couple -->
+                <section class="bg-white-black text-center" id="bride">
+                    <h2 class="font-esthetic py-4 m-0" style="font-size: 2rem;">Together with their families</h2>
+                    <p class="pb-4 px-2 m-0" style="font-size: 0.95rem;">Jay and Char joyfully invite you to celebrate their wedding.</p>
+
+                    <div class="overflow-x-hidden pb-4">
+
+                        <div class="position-relative">
+                            <!-- Love animation -->
+                            <div class="position-absolute" style="top: 0%; right: 5%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="500" data-class="animate-love" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+
+                            <div data-aos="fade-right" data-aos-duration="2000" class="pb-1">
+                                <img src="./assets/images/placeholder.webp" data-src="./assets/images/jay.webp" alt="Jay" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
+                                <h2 class="font-esthetic m-0" style="font-size: 2.5rem;">Jay</h2>
+                            </div>
+
+                            <!-- Love animation -->
+                            <div class="position-absolute" style="top: 90%; left: 5%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="2000" data-class="animate-love" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <h2 class="font-esthetic mt-4" style="font-size: 4.5rem;">&amp;</h2>
+
+                        <div class="position-relative">
+                            <!-- Love animation -->
+                            <div class="position-absolute" style="top: 0%; right: 5%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="3000" data-class="animate-love" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+
+                            <div data-aos="fade-left" data-aos-duration="2000" class="pb-1">
+                                <img src="./assets/images/placeholder.webp" data-src="./assets/images/char.webp" alt="Char" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
+                                <h2 class="font-esthetic m-0" style="font-size: 2.5rem;">Char</h2>
+                            </div>
+
+                            <!-- Love animation -->
+                            <div class="position-absolute" style="top: 90%; left: 5%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="2500" data-class="animate-love" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-heart"></i>
-                                <select name="attending" id="attending" required>
-                                    <option value="Yes">Joyfully accepts</option>
-                                    <option value="No">Regretfully declines</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" id="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Additional guests (0-4)"
-                                                                  required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-cutlery"></i><input name="dietary" class=""
-                                                                    placeholder="Dietary needs (optional)">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input name="invite_code" id="invite_code"
-                                                                class=""
-                                                                placeholder="Invite code"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-input-group">
-                                <i class="fa fa-comment"></i><input name="message" class=""
-                                                                    placeholder="A note for the couple (optional)">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Send my RSVP
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+                </section>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Made with lots of <span class="fa fa-heart pulse2"></span> for Jay &amp; Char</p>
-                <p class="template-credit">Based on the open-source <a href="https://github.com/rampatra/wedding-website"
-                                                                       target="_blank" rel="noopener">wedding-website</a>
-                    template by Ram Patra.</p>
+                <!-- Wave Separator -->
+                <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-svg no-gap-bottom">
+                        <path fill="currentColor" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+                    </svg>
+                </div>
+
+                <!-- Verse -->
+                <section class="bg-light-dark pt-2 pb-4">
+                    <div class="container text-center">
+                        <h2 class="font-esthetic pt-2 pb-1 m-0" style="font-size: 2rem;">A Word on Love</h2>
+
+                        <div class="bg-theme-auto mt-4 p-3 shadow rounded-4" data-aos="fade-down" data-aos-duration="2000">
+                            <p class="p-1 mb-2" style="font-size: 0.95rem;">Love is patient and is kind; love doesn't envy. Love doesn't brag, is not proud,</p>
+                            <p class="m-0 p-0 text-theme-auto" style="font-size: 0.95rem;">1 Corinthians 13:4 (WEB)</p>
+                        </div>
+
+                        <div class="bg-theme-auto mt-4 p-3 shadow rounded-4" data-aos="fade-down" data-aos-duration="2000">
+                            <p class="p-1 mb-2" style="font-size: 0.95rem;">bears all things, believes all things, hopes all things, endures all things.</p>
+                            <p class="m-0 p-0 text-theme-auto" style="font-size: 0.95rem;">1 Corinthians 13:7 (WEB)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Love Story -->
+                <section class="bg-light-dark pt-2 pb-4">
+                    <div class="container">
+                        <div class="bg-theme-auto rounded-5 shadow p-3">
+                            <h2 class="font-esthetic text-center py-2 mb-2" style="font-size: 2.125rem;">Our Story</h2>
+
+                            <div class="position-relative">
+                                <div class="position-absolute d-flex justify-content-center align-items-center top-50 start-50 translate-middle w-100 h-100 bg-overlay-auto z-3" style="opacity: 100%; background-color: unset;">
+                                    <button class="btn btn-outline-auto btn-sm rounded-4 shadow-sm" onclick="undangan.guest.showStory(this.parentNode)"><i class="fa-solid fa-heart fa-bounce me-2"></i>Read Our Story</button>
+                                </div>
+
+                                <div class="overflow-y-scroll overflow-x-hidden p-2 with-scrollbar" style="height: 15rem;">
+                                    <!-- TODO: placeholder story. Replace with Jay &amp; Char's own words. -->
+                                    <div class="row">
+                                        <div class="col-auto position-relative">
+                                            <p class="position-relative d-flex justify-content-center align-items-center bg-theme-auto border border-secondary border-2 opacity-100 rounded-circle m-0 p-0 z-1" style="width: 2rem; height: 2rem;">1</p>
+                                            <hr class="position-absolute top-0 start-50 translate-middle-x border border-secondary h-100 z-0 opacity-100 m-0 rounded-4 shadow-none">
+                                        </div>
+                                        <div class="col mt-1 mb-3 ps-0">
+                                            <p class="fw-bold mb-2">💬 A Conversation That Never Ended</p>
+                                            <p class="small mb-0">
+                                                It started with a simple hello and turned into hours of talking. Somewhere between the laughs and the late-night messages, we realized we had found our favorite person to talk to.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-auto position-relative">
+                                            <p class="position-relative d-flex justify-content-center align-items-center bg-theme-auto border border-secondary border-2 opacity-100 rounded-circle m-0 p-0 z-1" style="width: 2rem; height: 2rem;">2</p>
+                                            <hr class="position-absolute top-0 start-50 translate-middle-x border border-secondary h-100 z-0 opacity-100 m-0 rounded-4 shadow-none">
+                                        </div>
+                                        <div class="col mt-1 mb-3 ps-0">
+                                            <p class="fw-bold mb-2">💞 Growing Together</p>
+                                            <p class="small mb-0">
+                                                Busy weeks, small adventures and quiet moments later, we learned that home isn't a place. It's each other.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-auto position-relative">
+                                            <p class="position-relative d-flex justify-content-center align-items-center bg-theme-auto border border-secondary border-2 opacity-100 rounded-circle m-0 p-0 z-1" style="width: 2rem; height: 2rem;">3</p>
+                                            <hr class="position-absolute top-0 start-50 translate-middle-x border border-secondary h-100 z-0 opacity-100 m-0 rounded-4 shadow-none">
+                                        </div>
+                                        <div class="col mt-1 mb-3 ps-0">
+                                            <p class="fw-bold mb-2">💍 The Big Question</p>
+                                            <p class="small mb-0">
+                                                Then came one evening, a small box and a very happy yes. Now we can't wait to celebrate our next chapter with the people who matter most to us.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wave Separator -->
+                <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-svg no-gap-bottom">
+                        <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+                    </svg>
+                </div>
+
+                <!-- Wedding Date -->
+                <section class="bg-white-black pb-2" id="wedding-date">
+                    <div class="container text-center">
+                        <h2 class="font-esthetic py-4 m-0" style="font-size: 2.25rem;">Save the Date</h2>
+
+                        <div class="border rounded-pill shadow py-2 px-4 mt-2 mb-4">
+                            <div class="row justify-content-center">
+                                <div class="col-3 p-1">
+                                    <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="day">0</p><small class="ms-1 me-0 my-0 p-0 d-inline">Days</small>
+                                </div>
+                                <div class="col-3 p-1">
+                                    <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="hour">0</p><small class="ms-1 me-0 my-0 p-0 d-inline">Hrs</small>
+                                </div>
+                                <div class="col-3 p-1">
+                                    <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="minute">0</p><small class="ms-1 me-0 my-0 p-0 d-inline">Min</small>
+                                </div>
+                                <div class="col-3 p-1">
+                                    <p class="d-inline m-0 p-0" style="font-size: 1.25rem;" id="second">0</p><small class="ms-1 me-0 my-0 p-0 d-inline">Sec</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="py-2 m-0" style="font-size: 0.95rem;">We joyfully invite you to celebrate with us on Saturday, January 22, 2028:</p>
+
+                        <!-- Love animation -->
+                        <div class="position-relative">
+                            <div class="position-absolute" style="top: 0%; right: 5%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="3000" data-class="animate-love" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="overflow-x-hidden">
+                            <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                                <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Ceremony</h2>
+                                <p class="mb-1" style="font-size: 0.95rem;">2:00 PM</p>
+                                <p style="font-size: 0.95rem;">Manila Cathedral, Intramuros, Manila</p>
+                                <a href="https://www.google.com/maps/search/?api=1&amp;query=Manila+Cathedral%2C+Intramuros%2C+Manila" target="_blank" rel="noopener" class="btn btn-outline-auto btn-sm rounded-pill shadow mb-2 px-3"><i class="fa-solid fa-map-location-dot me-2"></i>View on Google Maps</a>
+                            </div>
+
+                            <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
+                                <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Reception</h2>
+                                <p class="mb-1" style="font-size: 0.95rem;">5:00 PM</p>
+                                <p style="font-size: 0.95rem;">La Castellana, Intramuros, Manila</p>
+                                <a href="https://www.google.com/maps/search/?api=1&amp;query=La+Castellana%2C+Intramuros%2C+Manila" target="_blank" rel="noopener" class="btn btn-outline-auto btn-sm rounded-pill shadow mb-2 px-3"><i class="fa-solid fa-map-location-dot me-2"></i>View on Google Maps</a>
+                            </div>
+                        </div>
+
+                        <small class="d-block mt-2 mb-3 text-secondary">Times are tentative. Final details will be shared closer to the date.</small>
+
+                        <p class="py-2 m-0" style="font-size: 0.95rem;">For a warm and elegant celebration, we kindly ask you to wear:</p>
+
+                        <!-- Love animation -->
+                        <div class="position-relative">
+                            <div class="position-absolute" style="top: 0%; left: 5%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="2000" data-class="animate-love" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="py-2 pb-4" data-aos="fade-down" data-aos-duration="1500">
+                            <div class="d-flex justify-content-center align-items-center mb-3">
+                                <div class="shadow rounded-circle border border-secondary" style="width: 3rem; height: 3rem; background-color: #fffdf9;"></div>
+                                <div class="shadow rounded-circle border border-secondary" style="width: 3rem; height: 3rem; background-color: #c9a45c; margin-left: -1rem;"></div>
+                                <div class="shadow rounded-circle border border-secondary" style="width: 3rem; height: 3rem; background-color: #5a2a33; margin-left: -1rem;"></div>
+                            </div>
+                            <p class="mb-1" style="font-size: 0.95rem;">Formal attire. Barong Tagalog and Filipiniana are most welcome.</p>
+                            <small class="text-secondary">Please dress modestly for the cathedral ceremony. Color palette to be confirmed.</small>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gallery -->
+                <section class="bg-white-black pb-5 pt-3" id="gallery">
+                    <div class="container">
+                        <div class="border rounded-5 shadow p-3">
+
+                            <h2 class="font-esthetic text-center py-2 m-0" style="font-size: 2.25rem;">Gallery</h2>
+
+                            <div id="carousel-image-one" data-aos="fade-up" data-aos-duration="1500" class="carousel slide mt-4" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+
+                                <div class="carousel-inner rounded-4">
+                                    <div class="carousel-item active">
+                                        <img src="./assets/images/placeholder.webp" data-src="./assets/images/gallery-1.webp" alt="Jay and Char" class="d-block img-fluid cursor-pointer" onclick="undangan.guest.modal(this)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/placeholder.webp" data-src="./assets/images/gallery-2.webp" alt="Holding hands" class="d-block img-fluid cursor-pointer" onclick="undangan.guest.modal(this)">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-image-one" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-image-one" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wave Separator -->
+                <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-svg no-gap-bottom">
+                        <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+                    </svg>
+                </div>
+
+                <!-- RSVP -->
+                <section class="bg-light-dark my-0 pb-4 pt-3" id="rsvp">
+                    <div class="container">
+                        <div class="border rounded-5 shadow p-3 mb-2">
+                            <h2 class="font-esthetic text-center mt-2 mb-2" style="font-size: 2.25rem;">RSVP</h2>
+                            <p class="text-center small mb-4">Kindly respond on or before December 15, 2027.</p>
+
+                            <form id="rsvp-form" novalidate>
+                                <div class="mb-3">
+                                    <label for="rsvp-name" class="form-label my-1"><i class="fa-solid fa-person me-2"></i>Name</label>
+                                    <input dir="auto" type="text" class="form-control shadow-sm rounded-4" id="rsvp-name" name="name" minlength="2" maxlength="80" placeholder="Your full name" autocomplete="name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="rsvp-email" class="form-label my-1"><i class="fa-solid fa-envelope me-2"></i>Email</label>
+                                    <input type="email" class="form-control shadow-sm rounded-4" id="rsvp-email" name="email" maxlength="120" placeholder="you@example.com" autocomplete="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="rsvp-attending" class="form-label my-1"><i class="fa-solid fa-person-circle-question me-2"></i>Will you attend?</label>
+                                    <select class="form-select shadow-sm rounded-4" id="rsvp-attending" name="attending" autocomplete="off" required>
+                                        <option value="Yes" selected>&#9989; Joyfully accepts</option>
+                                        <option value="No">&#10060; Regretfully declines</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="rsvp-extras" class="form-label my-1"><i class="fa-solid fa-users me-2"></i>Additional guests</label>
+                                    <input type="number" class="form-control shadow-sm rounded-4" id="rsvp-extras" name="extras" min="0" max="4" value="0" inputmode="numeric">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="rsvp-dietary" class="form-label my-1"><i class="fa-solid fa-utensils me-2"></i>Dietary needs <span class="text-secondary">(optional)</span></label>
+                                    <input dir="auto" type="text" class="form-control shadow-sm rounded-4" id="rsvp-dietary" name="dietary" maxlength="120" placeholder="Allergies, vegetarian, etc." autocomplete="off">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="rsvp-message" class="form-label my-1"><i class="fa-solid fa-comment me-2"></i>A note for the couple <span class="text-secondary">(optional)</span></label>
+                                    <textarea dir="auto" class="form-control shadow-sm rounded-4" id="rsvp-message" name="message" rows="3" maxlength="500" placeholder="Write a message" autocomplete="off"></textarea>
+                                </div>
+
+                                <!-- Honeypot: real guests never see or fill this -->
+                                <div class="visually-hidden" aria-hidden="true">
+                                    <label for="rsvp-website">Website</label>
+                                    <input type="text" id="rsvp-website" name="website" tabindex="-1" autocomplete="off">
+                                </div>
+
+                                <div id="rsvp-alert" class="mb-3" role="status" aria-live="polite"></div>
+
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-sm rounded-4 shadow m-1" id="rsvp-submit">
+                                        <i class="fa-solid fa-paper-plane me-2"></i>Send RSVP
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wave Separator -->
+                <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-svg no-gap-bottom">
+                        <path fill="currentColor" fill-opacity="1" d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+                    </svg>
+                </div>
+
+                <!-- End Of Invitation -->
+                <section class="bg-white-black py-2 no-gap-bottom">
+                    <div class="container text-center">
+                        <p class="pb-2 pt-4" style="font-size: 0.95rem;">Thank you for being part of our story. Your presence is the greatest gift we could ask for.</p>
+
+                        <h2 class="font-esthetic" style="font-size: 2.25rem;">With love, Jay &amp; Char</h2>
+
+                        <hr class="my-3">
+
+                        <div class="row align-items-center justify-content-between flex-column pb-3">
+                            <div class="col-auto">
+                                <small>Made with<i class="fa-solid fa-heart mx-1"></i>for Jay &amp; Char</small>
+                            </div>
+                            <div class="col-auto">
+                                <small><i class="fa-brands fa-github me-1"></i><a target="_blank" rel="noopener" href="https://github.com/dewanakl/undangan">template</a></small>
+                                <small><i class="fa-solid fa-music me-1"></i><a target="_blank" rel="noopener" href="https://pixabay.com/music/modern-classical-pure-love-304010">music</a></small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Navbar Bottom -->
+            <nav class="navbar navbar-expand sticky-bottom rounded-top-4 border-top p-0" id="navbar-menu">
+                <ul class="navbar-nav nav-justified w-100 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-block" style="font-size: 0.7rem;">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bride">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span class="d-block" style="font-size: 0.7rem;">Couple</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wedding-date">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span class="d-block" style="font-size: 0.7rem;">Date</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">
+                            <i class="fa-solid fa-images"></i>
+                            <span class="d-block" style="font-size: 0.7rem;">Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rsvp">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                            <span class="d-block" style="font-size: 0.7rem;">RSVP</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Welcome Page -->
+    <div class="loading-page bg-white-black" id="welcome" style="opacity: 0;">
+        <div class="d-flex justify-content-center align-items-center vh-100 overflow-y-auto">
+            <div class="d-flex flex-column text-center">
+                <h2 class="font-esthetic mb-4" style="font-size: 2.25rem;">The Wedding Of</h2>
+
+                <img src="./assets/images/placeholder.webp" data-src="./assets/images/couple-1.webp" alt="Jay and Char" class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto" style="object-position: center 30%;">
+
+                <h2 class="font-esthetic mb-4" style="font-size: 2.25rem;">Jay &amp; Char</h2>
+                <div id="guest-name" data-message="Dear"></div>
+
+                <button type="button" class="btn btn-light shadow rounded-4 mt-3 mx-auto" onclick="undangan.guest.open(this)"><i class="fa-solid fa-envelope-open fa-bounce me-2"></i>Open Invitation</button>
             </div>
         </div>
     </div>
-</footer>
-<script src="js/vendor/jquery-1.11.2.min.js"></script>
-<script src="js/vendor/jquery.waypoints.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
+
+    <!-- Button Group -->
+    <div class="d-flex position-fixed flex-column" style="bottom: 10vh; right: 2vh; z-index: 1030;">
+        <!-- Theme Button -->
+        <button type="button" id="button-theme" class="btn bg-light-dark border btn-sm rounded-circle d-none btn-transparent shadow-sm mt-3" aria-label="Change theme" onclick="undangan.theme.change()">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+
+        <!-- Audio Button -->
+        <button type="button" id="button-music" class="btn bg-light-dark border btn-sm rounded-circle d-none btn-transparent shadow-sm mt-3" aria-label="Change audio" data-offline-disabled="false">
+            <i class="fa-solid fa-circle-pause spin-button"></i>
+        </button>
+    </div>
+
+    <!-- Loading Page -->
+    <div class="loading-page bg-white-black" id="loading" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center vh-100 overflow-y-auto">
+            <div class="d-flex flex-column width-loading text-center">
+                <img src="./assets/images/placeholder.webp" data-src="./assets/images/icon-192x192.png" fetchpriority="high" class="img-fluid mb-3 mx-auto object-fit-cover opacity-0" alt="icon" style="width: 3.5rem; height: 3.5rem;">
+                <div class="progress" role="progressbar" style="height: 0.5rem;" aria-label="progress bar">
+                    <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+                </div>
+                <small class="d-none mt-1 text-theme-auto" id="progress-info" style="font-size: 0.8rem;">Booting application...</small>
+                <noscript>
+                    <small class="mt-1 text-danger">Sorry, this invitation requires javascript to work</small>
+                </noscript>
+            </div>
+        </div>
+        <div class="text-center position-fixed w-100" style="bottom: 8%; left: 0;">
+            <div class="d-flex flex-column">
+                <small class="text-secondary">from</small>
+                <small class="text-theme-auto"><i class="fa-solid fa-heart me-1"></i>Jay &amp; Char</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Image -->
+    <div class="modal fade" id="modal-image" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border border-0">
+                <div class="modal-body p-0">
+                    <div class="d-flex position-absolute top-0 end-0">
+                        <a class="btn d-flex justify-content-center align-items-center bg-overlay-auto p-2 m-1 rounded-circle border shadow-sm z-1" role="button" target="_blank" href="./assets/images/placeholder.webp" id="button-modal-click">
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="width: 1em !important;"></i>
+                        </a>
+                        <button class="btn d-flex justify-content-center align-items-center bg-overlay-auto p-2 m-1 rounded-circle border shadow-sm z-1" id="button-modal-download">
+                            <i class="fa-solid fa-download" style="width: 1em !important;"></i>
+                        </button>
+                        <button class="btn d-flex justify-content-center align-items-center bg-overlay-auto p-2 m-1 rounded-circle border shadow-sm z-1" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-circle-xmark" style="width: 1em !important;"></i>
+                        </button>
+                    </div>
+
+                    <img src="./assets/images/placeholder.webp" class="img-fluid w-100 rounded-4 cursor-pointer" alt="image" id="show-modal-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 1) Deploy apps-script/Code.gs as a Google Apps Script web app (see apps-script/README.md).
+        // 2) Paste the web app URL between the quotes below.
+        const RSVP_ENDPOINT = '';
+
+        document.getElementById('rsvp-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const form = e.currentTarget;
+            const alertBox = document.getElementById('rsvp-alert');
+            const button = document.getElementById('rsvp-submit');
+            const show = (type, text) => {
+                alertBox.innerHTML = '';
+                const div = document.createElement('div');
+                div.className = 'alert alert-' + type + ' rounded-4 mb-0';
+                div.textContent = text;
+                alertBox.appendChild(div);
+            };
+
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            // Honeypot filled in means a bot: pretend it worked.
+            if (document.getElementById('rsvp-website').value) {
+                show('success', 'Thank you!');
+                return;
+            }
+
+            if (!RSVP_ENDPOINT) {
+                show('warning', 'The RSVP form is not connected to the guest list yet. Please check back soon or contact Jay or Char directly.');
+                return;
+            }
+
+            button.disabled = true;
+            show('info', 'Just a sec, we are saving your RSVP...');
+
+            try {
+                const res = await fetch(RSVP_ENDPOINT, { method: 'POST', body: new URLSearchParams(new FormData(form)) });
+                const data = await res.json();
+                if (data.result === 'error') {
+                    throw new Error(data.message);
+                }
+
+                const declined = document.getElementById('rsvp-attending').value === 'No';
+                show('success', declined
+                    ? 'Thank you for letting us know. You will be in our hearts on our big day.'
+                    : 'Thank you! We are so glad you will be joining us on our big day.');
+                form.reset();
+            } catch (err) {
+                show('danger', 'Sorry, we could not save your RSVP. Please try again in a moment.');
+            } finally {
+                button.disabled = false;
+            }
+        });
+    </script>
 </body>
+
 </html>
